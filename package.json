@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/FortanZz/ComputerGraphics/issues"
   },
-  "homepage": "https://github.com/FortanZz/ComputerGraphics#readme"
+  "homepage": "https://github.com/FortanZz/ComputerGraphics#readme",
+  "dependencies": {
+    "three": "^0.186.1",
+    "vite": "^8.3.4"
+  }
 }

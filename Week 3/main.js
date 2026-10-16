@@ -32,6 +32,17 @@ earth.position.x = 6
 earthOrbit.add(earth)
 
 const control = new OrbitControls(camera, renderer.domElement);
+
+const moonOrbit = new THREE.Object3D();
+earth.add(moonOrbit)
+
+const moon = new THREE.Mesh(
+    new THREE.SphereGeometry(0.3, 32, 24),
+    new THREE.MeshStandardMaterial({ color: 0x9ca3af, roughness: 0.9 })
+)
+
+moon.position.x = 2
+moonOrbit.add(moon)
 function animate() {
     requestAnimationFrame(animate)
     control.update()
